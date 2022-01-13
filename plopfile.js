@@ -14,6 +14,12 @@ module.exports = plop => {
           path: 'src/Components/{{pascalCase name}}/{{pascalCase name}}.js',
           templateFile: 'plop-templates/Component.js.hbs',
         },
+        {
+            type: 'add',
+            path: 'src/components/{{pascalCase name}}/tests/{{pascalCase name}}.test.js',
+            templateFile:
+              'plop-templates/Component.test.js.hbs',
+          },
       ],
     });
   };
