@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "enzyme": "^3.11.0",
     "plop": "^3.0.5"
   }
 }
