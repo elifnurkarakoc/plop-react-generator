@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Button.module.css';
+import './Button.scss';
 
 const Button = (props) => {
   return (
-    <div className={styles.container}>
+    <div className='buttonContainer'>
     </div>
   );
 };
