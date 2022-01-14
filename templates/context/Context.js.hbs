@@ -1,0 +1,10 @@
+import { createContext, useContext } from "react";
+
+const {{pascalCase name}}Context = createContext();
+
+export const {{pascalCase name}}Provider = ({ children }) => {
+   const values = {}
+   return <{{pascalCase name}}Context.Provider value={values}>{children}</{{pascalCase name}}Context.Provider>;
+}
+
+export const use{{pascalCase name}} = () => useContext({{pascalCase name}}Context);

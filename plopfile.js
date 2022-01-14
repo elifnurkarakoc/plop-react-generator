@@ -12,27 +12,27 @@ module.exports = (plop) => {
       {
         type: "add",
         path: "src/Components/{{pascalCase name}}/{{pascalCase name}}.js",
-        templateFile: "plop-templates/Component.js.hbs",
+        templateFile: "templates/component/Component.js.hbs",
       },
       {
         type: "add",
         path: "src/Components/{{pascalCase name}}/tests/{{pascalCase name}}.test.js",
-        templateFile: "plop-templates/Component.test.js.hbs",
+        templateFile: "templates/component/Component.test.js.hbs",
       },
       {
         type: "add",
         path: "src/Components/{{pascalCase name}}/{{pascalCase name}}.scss",
-        templateFile: "plop-templates/Component.scss.hbs",
+        templateFile: "templates/component/Component.scss.hbs",
       },
       {
         type: "add",
         path: "src/Components/{{pascalCase name}}/index.js",
-        templateFile: "plop-templates/index.js.hbs",
+        templateFile: "templates/component/index.js.hbs",
       },
       {
         type: 'add',
         path: 'src/components/index.js',
-        templateFile: 'plop-templates/injectable-index.js.hbs',
+        templateFile: 'templates/component/injectable-index.js.hbs',
         skipIfExists: true,
       },
       {
@@ -46,6 +46,24 @@ module.exports = (plop) => {
         path: 'src/Components/index.js',
         pattern: `/* PLOP_INJECT_EXPORT */`,
         template: `{{pascalCase name}},`,
+      },
+    ],
+  });
+
+  plop.setGenerator("context-api", {
+    description: "Create a context-api",
+    prompts: [
+      {
+        type: "input",
+        name: "name",
+        message: "Context name:",
+      },
+    ],
+    actions: [
+      {
+        type: "add",
+        path: "src/Contexts/{{pascalCase name}}Context.js",
+        templateFile: "templates/context/Context.js.hbs",
       },
     ],
   });
