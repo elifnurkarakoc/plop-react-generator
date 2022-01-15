@@ -9,10 +9,32 @@
 * [ReactJS](https://reactjs.org/)
 * [Enzyme](https://enzymejs.github.io/enzyme/)
 
+
+
+### Installation
+
+Clone the repo
+   ```sh
+   git clone https://github.com/elifnurkarakoc/plop-react-generator.git
+   ```
+ Install NPM packages
+   ```sh
+   npm install
+   ```
+
+
 ### Use 
 
+Create Component
+```bash
+   
+npm run generate component componentName
+
+```
+
+Create Context API
 ```bash
 
-npm run generate component <name>
+npm run generate context-api contextName
 
 ```
