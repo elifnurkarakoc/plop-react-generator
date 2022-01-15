@@ -41,9 +41,15 @@ npm run generate context-api contextName
 ```
 
 After the Context API is created, you must add it to index.js.
-Example:
 
+Example:
 ```js
+import { AuthProvider } from "./Contexts/AuthContext";
+
+.
+.
+.
+
 <AuthProvider>
   <App />
 </AuthProvider>
